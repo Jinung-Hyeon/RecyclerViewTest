@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="5">
+
+    <FrameLayout
+        android:layout_margin="10dp"
+        android:id="@+id/guideFrame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.7"></FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/QnAFrame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.87"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:fadeScrollbars="true"
+            android:overScrollMode="never"
+            android:id="@+id/recycler1"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/pageButton_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.4"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+<!--        <TextView-->
+<!--            android:gravity="center"-->
+<!--            android:layout_width="35dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:text="&lt;"-->
+<!--            android:textAlignment="center"-->
+<!--            android:background="@drawable/bg_custom_button"/>-->
+
+<!--        <TextView-->
+<!--            android:gravity="center"-->
+<!--            android:layout_width="35dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:textAlignment="center"-->
+<!--            android:text="&gt;"-->
+<!--            android:background="@drawable/bg_custom_button"/>-->
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:orientation="horizontal"-->
+<!--tools:context=".MainActivity"-->
+<!--android:weightSum="4">-->
+
+<!--<FrameLayout-->
+<!--    android:id="@+id/QnAFrame"-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:layout_weight="3"-->
+<!--    android:layout_marginLeft="10dp"-->
+<!--    android:layout_marginTop="10dp"-->
+<!--    android:layout_marginBottom="10dp-->
+<!--">-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recycler1"-->
+<!--        android:scrollbars="vertical"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+<!--</FrameLayout>-->
+
+<!--<FrameLayout-->
+<!--    android:id="@+id/guideFrame"-->
+<!--    android:layout_margin="10dp"-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:layout_weight="1"></FrameLayout>-->
+
+
+
+<!--</LinearLayout>-->
